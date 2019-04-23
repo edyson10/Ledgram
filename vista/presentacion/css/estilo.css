@@ -1,0 +1,292 @@
+/*body{
+    content: "";
+    background-image: url("../images/apps_co.jpg");
+    background-size: cover;
+    background-position: center;
+    position: center;
+    background-repeat: no-repeat;
+}*/
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.cargar{
+    animation: slide 2s;
+}
+
+.carrusel{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    animation: slide 30s infinite;
+    margin-top: -5%;
+}
+
+.lista {
+  display: flex;
+  text-align: right;
+}
+
+.lista li{
+  float: right;
+  flex: 1;
+}
+
+
+.carrusel:before {
+  content: "";
+  background-color: #fafafa;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 0.5;
+}
+
+.container {
+  position: relative;
+  top: 20%;
+}
+
+#seccionop {
+  background: #F1F3F3;
+  border-top: 10px double;
+  border-bottom: 10px double;
+  border-color: #b43432;
+  border-radius: 15px 15px 15px 15px;
+  display: block;
+  margin: 6% 35% 5% 35%; 
+}
+
+p{
+  text-align: center;
+  margin: 1em;
+}
+
+#iconocabecera {
+  width: 40%;
+  margin: auto;
+  display: block;
+  padding-top: 10px;
+}
+
+footer {
+  text-align: right;
+  padding-right: 2em;
+  padding-top: 2em;
+  position: relative;
+  bottom: -20%;
+}
+
+.imagen-principal{
+  align-items: right;
+  width: 5%;
+  padding-right: 1em;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
+#imgperfil {
+  width: 150px;
+  height: 150px;
+}
+
+.color_1{
+  height: 100%;
+  width: 100%;
+}
+
+.color_2{
+  background: #fff;
+  height: 50%;
+  width: 100%
+}
+
+nav{
+	list-style-type: none;
+}
+
+.letra-titulo{
+	font-family: 'Oswald', sans-serif;
+	font-size: 2em;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #ffffff;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+
+
+.imagen-carousel {
+	height:100%; 
+	width:100%;
+}
+
+#tit {
+  margin-top: 1em;
+  text-align: center;
+}
+
+#seccion {
+  background: #F1F3F3;
+  border-top: 10px double;
+  border-bottom: 10px double;
+  border-color: #b43432;
+  border-radius: 15px 15px 15px 15px;
+  display: block;
+  margin: 10% 15% 5% 15%;
+}
+
+p{
+  text-align: center;
+  margin: 1em;
+}
+
+#logop {
+  display: block;
+  margin: auto;
+  width: 30%;
+}
+
+#fpd {
+  margin-right: 12em;
+}
+
+#navpd {
+  padding: 1em;
+}
+
+#tpd {
+  margin: auto;
+  margin-top: 4em;
+  color: #A0A5A5;
+}
+
+#tdpd {
+  color: black;
+  text-align: center;
+}
+
+header{
+  width: 100%;
+  background-color: white; 
+  border-radius: 20px 20px 20px 20px;
+  padding: 15px;
+}
+
+.navegacion{
+  padding: -10px;
+}
+
+header .izq{
+  width: 33%;
+  padding: 2%;
+}
+
+header .centro{
+  margin-top: 2%;
+  width: 25%;
+}
+
+header .der{
+  padding: 2%;
+  width: 33%;
+  float: right;
+}
+
+#iconocabecera {
+  width: 40%;
+  margin: auto;
+  display: block;
+  padding-top: 10px;
+}
+
+footer {
+  text-align: right;
+  padding-right: 2em;
+  padding-top: 2em;
+}
+
+@keyframes slide{
+    0%{
+            background-image: url("../images/apps_co.jpg");
+    }
+    20%{
+            background-image: url("../images/apps_co.jpg");
+    }
+    20.01%{
+            background-image: url("../images/apps.jpg");
+    }
+    40%{
+            background-image: url("../images/apps.jpg");
+    }
+    40.01%{
+            background-image: url("../images/apps_co.jpg");
+    }
+    60%{
+            background-image: url("../images/apps_co.jpg");
+    }
+    60.01%{
+            background-image: url("../images/apps.jpg");
+    }
+    80%{
+            background-image: url("../images/apps.jpg");
+    }
+    80.01%{
+            background-image: url("../images/apps_co.jpg");
+    }
+    100%{
+            background-image: url("../images/apps_co.jpg");
+    }
+}
+
+@media (max-width: 800px) {
+    #seccionop{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    #logop{
+      width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    #seccionop{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    #logop{
+      width: 30%;
+    }
+}
